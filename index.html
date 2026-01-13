@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>count-ui — Beautiful Number Formatting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./index.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-32 text-center">
+    <h1 class="text-5xl font-bold mb-4">count-ui</h1>
+    <p class="text-xl mb-8 max-w-xl mx-auto">A lightweight, HTML-first web component for displaying formatted numbers with separators, short notation, prefixes, suffixes, and precision.</p>
+    <a href="#examples" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">See Examples</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4">Easy to Use</h3>
+        <p>Just add <code>&lt;count-ui val="1234"&gt;</code> and it works. No framework required.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4">Flexible Formatting</h3>
+        <p>Thousands separators, <code>K/M/B</code> short notation, decimal precision, prefix & suffix support.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-4">Lightweight & Fast</h3>
+        <p>Pure web component with zero dependencies. Small, fast, and easy to integrate.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Examples Section -->
+  <section id="examples" class="bg-gray-100 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Live Examples</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Basic Number</h3>
+          <count-ui val="1234567" sep=","></count-ui>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Short Notation</h3>
+          <count-ui val="1500000" short></count-ui>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Prefix & Suffix</h3>
+          <count-ui val="2500" pref="$" suff=" USD"></count-ui>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Decimal Precision</h3>
+          <count-ui val="3.14159" prec="2"></count-ui>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Section -->
+  <section class="py-20 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-8">Get Started</h2>
+      <p class="mb-6">Install via npm or include the script directly:</p>
+      <pre class="bg-gray-800 text-white rounded-lg p-4 mb-4 text-left">
+npm install count-ui
+      </pre>
+      <pre class="bg-gray-800 text-white rounded-lg p-4 text-left">
+&lt;script src="https://count-ui.onrender.com/src/count-ui.js"&gt;&lt;/script&gt;
+      </pre>
+      <a href="#examples" class="mt-6 inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">Try Examples</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-12 text-center">
+    <p>© 2025 Jahongir Sobirov. MIT License.</p>
+    <p>Built with 💜 for developers.</p>
+  </footer>
+
+</body>
+</html>
